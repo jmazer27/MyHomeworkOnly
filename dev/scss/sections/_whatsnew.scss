@@ -3,5 +3,11 @@
 ============= */
 
 #whatsnew{
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". whatsnew .";
 
+    >div{
+    grid-area: whatsnew;
+    }
 }

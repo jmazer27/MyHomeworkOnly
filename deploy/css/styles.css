@@ -327,6 +327,23 @@ template {
 /* =============
     Base
 ============= */
+.header-footer-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header-footer .";
+}
+.header-footer-grid > div {
+  grid-area: header-footer;
+}
+
+.large-images {
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
 /* =============
     Typography
 ============= */
@@ -363,9 +380,38 @@ textarea {
 /* =============
     Hero
 ============= */
+#hero {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+#hero > div {
+  grid-area: hero;
+}
+
 /* =============
     Hero 2
 ============= */
 /* =============
     whats new
 ============= */
+#whatsnew {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". whatsnew .";
+}
+#whatsnew > div {
+  grid-area: whatsnew;
+}
+
+/* =============
+    Under Hero
+============= */
+#underhero {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". underhero .";
+}
+#underhero > div {
+  grid-area: underhero;
+}
