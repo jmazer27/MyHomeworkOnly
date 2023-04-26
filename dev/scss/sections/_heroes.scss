@@ -3,17 +3,29 @@
 ============= */
 
 #hero{
-     
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". hero .";
-    
+     aside{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". hero-aside .";
         >div{
-        grid-area: hero;
+            grid-area: hero-aside;
         }
+     }
 }
 
+#underhero{
 
+    .underhero-content{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". underhero .";
+        >div{
+            grid-area: underhero;
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+    }
+}
 
 
 /* =============

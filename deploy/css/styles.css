@@ -327,15 +327,17 @@ template {
 /* =============
     Base
 ============= */
-.header-footer-grid {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header-footer .";
-}
-.header-footer-grid > div {
-  grid-area: header-footer;
-}
+/*.header-footer-grid{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header-footer .";
 
+
+    >div{
+        grid-area: header-footer;
+    }
+}
+*/
 .large-images {
   width: 100%;
 }
@@ -374,19 +376,55 @@ textarea {
 /* =============
     Header
 ============= */
+#header #logo-nav {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". logo-nav .";
+}
+#header #logo-nav > div {
+  grid-area: logo-nav;
+}
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+#search > div {
+  grid-area: search;
+}
 /* =============
     Footer
 ============= */
+#footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+#footer > div {
+  grid-area: footer;
+}
+
 /* =============
     Hero
 ============= */
-#hero {
+#hero aside {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
+  grid-template-areas: ". hero-aside .";
 }
-#hero > div {
-  grid-area: hero;
+#hero aside > div {
+  grid-area: hero-aside;
+}
+
+#underhero .underhero-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". underhero .";
+}
+#underhero .underhero-content > div {
+  grid-area: underhero;
+  display: grid;
+  grid-template-columns: 50% auto;
 }
 
 /* =============
@@ -395,23 +433,14 @@ textarea {
 /* =============
     whats new
 ============= */
-#whatsnew {
+#whatsnew ul li img {
+  width: 100%;
+}
+#whatsnew ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". whatsnew .";
 }
-#whatsnew > div {
+#whatsnew ul li section > div {
   grid-area: whatsnew;
-}
-
-/* =============
-    Under Hero
-============= */
-#underhero {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". underhero .";
-}
-#underhero > div {
-  grid-area: underhero;
 }
