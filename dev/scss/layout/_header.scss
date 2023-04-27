@@ -2,40 +2,35 @@
     Header
 ============= */
 
-#header{
-    #logo-nav{
+#header {
+    #logo-nav {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". logo-nav .";
-         >div{
+
+        >div {
             grid-area: logo-nav;
-            img{
 
-
-            }
-        } 
+            img {}
+        }
 
     }
 }
 
-    #search{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". search .";
-        >div{
-            grid-area: search;
-            form{
-                input{
+#search {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search .";
 
-                }
+    >div {
+        grid-area: search;
 
-                button{
-                    img{
+        form {
+            input {}
 
-                    }
-                }
+            button {
+                img {}
             }
         }
     }
-  
-
+}
