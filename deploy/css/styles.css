@@ -436,8 +436,14 @@ footer > div {
 }
 
 /* =============
-    Hero 2
+    gallery
 ============= */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat, 1fr;
+  grid-template-areas: "image";
+}
+
 /* =============
     whats new
 ============= */
