@@ -1,0 +1,22 @@
+/* =============
+    gallery
+============= */
+
+#gallery{
+    display: grid;
+    grid-template-columns: (repeat, 1fr);
+    grid-template-areas: "image";
+
+    ul{
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: image;
+            margin-bottom: 0;
+            margin-top: 16px;
+        }
+    }
+
+
+   
+}

@@ -354,6 +354,10 @@ ul li {
   list-style: none;
 }
 
+.aboutimages {
+  width: 20%;
+}
+
 /* =============
     Typography
 ============= */
@@ -444,26 +448,6 @@ footer > div {
   }
 }
 
-#underhero .underhero-content {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". underhero .";
-}
-#underhero .underhero-content > div {
-  grid-area: underhero;
-  display: grid;
-  grid-template-columns: 50% auto;
-}
-
-/* =============
-    gallery
-============= */
-#gallery {
-  display: grid;
-  grid-template-columns: repeat, 1fr;
-  grid-template-areas: "image";
-}
-
 /* =============
     whats new
 ============= */
@@ -477,4 +461,49 @@ footer > div {
 }
 #whatsnew ul li section > div {
   grid-area: whatsnew;
+}
+
+#underhero {
+  display: grid;
+  grid-template-areas: 16px auto 16px;
+  grid-area: ". underhero .";
+}
+#underhero > div {
+  grid-area: underhero;
+  background-color: green;
+}
+#underhero > div ul {
+  margin: 16px;
+}
+@media (min-width: 768px) {
+  #underhero > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+}
+#underhero > div ul li {
+  background-color: rgb(80, 80, 247);
+  padding: 16px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+/* =============
+    gallery
+============= */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat, 1fr;
+  grid-template-areas: "image";
+}
+@media (min-width: 768px) {
+  #gallery ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: image;
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
 }

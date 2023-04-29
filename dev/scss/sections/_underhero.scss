@@ -1,0 +1,30 @@
+#underhero{
+        
+    display: grid;
+    grid-template-areas: 16px auto 16px;
+    grid-area: ". underhero .";
+    >div{
+        grid-area: underhero;
+        background-color: green;
+        ul{
+            margin: 16px;
+           
+
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
+                margin-bottom: 0;
+            }
+
+            li{
+                background-color: rgb(80, 80, 247);
+                padding: 16px;
+                margin-bottom: 16px;
+                color: white;
+
+            }
+
+        }
+    }
+}
