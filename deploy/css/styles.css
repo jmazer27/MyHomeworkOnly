@@ -415,13 +415,33 @@ footer > div {
 /* =============
     Hero
 ============= */
-#hero aside {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero-aside .";
+#hero > div ul {
+  margin: 0;
+  padding: 0;
+  background-color: fuchsia;
 }
-#hero aside > div {
-  grid-area: hero-aside;
+#hero > div ul #info-1 {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+#hero > div ul #info-2 {
+  background-color: orange;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  #hero > div ul {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
 
 #underhero .underhero-content {

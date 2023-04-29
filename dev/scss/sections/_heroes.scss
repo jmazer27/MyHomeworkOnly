@@ -3,14 +3,38 @@
 ============= */
 
 #hero{
-     aside{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". hero-aside .";
-        >div{
-            grid-area: hero-aside;
+    >div{
+        ul{
+            margin: 0;
+            padding: 0;
+            background-color: fuchsia;
+
+            #info-1{
+                background-color: red;
+                color: white;
+                padding: 16px;
+                display: grid;
+                grid-template-columns: 70% auto;
+
+            }
+
+            #info-2{
+                background-color: orange;
+                padding: 16px;
+
+            }
+
+            @include md{
+                display: grid;
+                grid-template-columns: 40% auto;
+            }
+
+            @include lg{
+                display: grid;
+                grid-template-columns: 50% auto;
+            }
         }
-     }
+    }
 }
 
 #underhero{
