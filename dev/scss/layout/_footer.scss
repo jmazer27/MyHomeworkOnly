@@ -2,12 +2,46 @@
     Footer
 ============= */
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
-   >div{
-        grid-area: footer; 
+    >div {
+        grid-area: footer;
+
+        #office {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: office;
+        }
+
+        #newsletter {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: newsletter;
+        }
+
+        #socialmedia {
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: socialmedia;
+        }
+
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "office newsletter"
+            ". socialmedia"
+        }
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "office newsletter socialmedia"
+        }
+
     }
 }

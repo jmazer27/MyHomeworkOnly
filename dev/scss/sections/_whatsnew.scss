@@ -3,19 +3,64 @@
 ============= */
 
 #whatsnew{
-        ul{
-            li{
-                img{
-                    width: 100%;
-                }
-                section{
-                    display: grid;
-                    grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". whatsnew .";
-                    >div{
-                        grid-area: whatsnew;
-                    }
-                }
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". whatsnew .";
+    background-color: gray;
+    width: 100%;
+     >div{
+        grid-area: whatsnew;
+        margin-bottom: 24px;
+
+        ul{ 
+            @include md{
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                "c1 c1 c2 c2"
+                "c3 c3 c4 c4"
+                ". c5 c5 .";
             }
+
+            @include lg{
+                    display: grid;
+                    gap: 16px;
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-areas:
+                    "c1 c1 c2 c2 c3 c3"
+                    ". c4 c4 c5 c5 ."
+                }
+                
+            li{
+                background-color: white;
+                text-align: center;
+                padding: 16px;
+                margin-top: 24px;
+            }    
         }
+
+        #c1{
+            grid-area: c1;
+        }
+    
+        #c2{
+            grid-area: c2;
+        }
+    
+        #c3{
+            grid-area: c3;
+        }
+    
+        #c4{
+            grid-area: c4;
+        }
+    
+        #c5{
+            grid-area: c5;
+        }
+    }
+   
+   
+
 }

@@ -415,6 +415,35 @@ footer {
 footer > div {
   grid-area: footer;
 }
+footer > div #office {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: office;
+}
+footer > div #newsletter {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: newsletter;
+}
+footer > div #socialmedia {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: socialmedia;
+}
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "office newsletter" ". socialmedia";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "office newsletter socialmedia";
+  }
+}
 
 /* =============
     Hero
@@ -451,16 +480,53 @@ footer > div {
 /* =============
     whats new
 ============= */
-#whatsnew ul li img {
-  width: 100%;
-}
-#whatsnew ul li section {
+#whatsnew {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". whatsnew .";
+  background-color: gray;
+  width: 100%;
 }
-#whatsnew ul li section > div {
+#whatsnew > div {
   grid-area: whatsnew;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #whatsnew > div ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
+  }
+}
+@media (min-width: 1024px) {
+  #whatsnew > div ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
+  }
+}
+#whatsnew > div ul li {
+  background-color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 24px;
+}
+#whatsnew > div #c1 {
+  grid-area: c1;
+}
+#whatsnew > div #c2 {
+  grid-area: c2;
+}
+#whatsnew > div #c3 {
+  grid-area: c3;
+}
+#whatsnew > div #c4 {
+  grid-area: c4;
+}
+#whatsnew > div #c5 {
+  grid-area: c5;
 }
 
 #underhero {
