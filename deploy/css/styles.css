@@ -476,6 +476,11 @@ footer > div #socialmedia {
     grid-template-columns: 50% auto;
   }
 }
+@media (min-width: 1440px) {
+  #hero > div ul {
+    grid-template-areas: auto 1440px auto;
+  }
+}
 
 /* =============
     whats new

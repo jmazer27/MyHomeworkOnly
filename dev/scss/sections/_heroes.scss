@@ -33,6 +33,10 @@
                 display: grid;
                 grid-template-columns: 50% auto;
             }
+
+            @include xxl{
+                grid-template-areas: auto 1440px auto;
+            }
         }
     }
 }
