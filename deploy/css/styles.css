@@ -544,7 +544,7 @@ footer > div #socialmedia {
 @media (min-width: 768px) {
   #underhero > div ul {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 40% auto;
     gap: 16px;
     margin-bottom: 0;
   }
