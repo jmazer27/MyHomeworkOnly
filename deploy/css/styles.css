@@ -420,6 +420,7 @@ textarea {
     Footer
 ============= */
 footer {
+  background-color: #C9D2DA;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -466,14 +467,14 @@ footer > div #socialmedia {
   background-color: fuchsia;
 }
 #hero > div ul #info-1 {
-  background-color: red;
+  background-color: #9A1211;
   color: white;
   padding: 16px;
   display: grid;
   grid-template-columns: 70% auto;
 }
 #hero > div ul #info-2 {
-  background-color: orange;
+  background-color: #CD2B29;
   padding: 16px;
 }
 @media (min-width: 768px) {
@@ -501,7 +502,6 @@ footer > div #socialmedia {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". whatsnew .";
-  background-color: gray;
   width: 100%;
 }
 #whatsnew > div {
@@ -525,7 +525,7 @@ footer > div #socialmedia {
   }
 }
 #whatsnew > div ul li {
-  background-color: white;
+  background-color: #D5DDE0;
   text-align: center;
   padding: 16px;
   margin-top: 24px;
@@ -553,7 +553,6 @@ footer > div #socialmedia {
 }
 #underhero > div {
   grid-area: underhero;
-  background-color: green;
 }
 #underhero > div ul {
   margin: 16px;
@@ -567,7 +566,7 @@ footer > div #socialmedia {
   }
 }
 #underhero > div ul li {
-  background-color: rgb(80, 80, 247);
+  background-color: #3D5A80;
   padding: 16px;
   margin-bottom: 16px;
   color: white;

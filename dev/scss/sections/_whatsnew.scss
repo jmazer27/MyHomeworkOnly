@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". whatsnew .";
-    background-color: gray;
+    // background-color: gray;
     width: 100%;
      >div{
         grid-area: whatsnew;
@@ -33,7 +33,7 @@
                 }
                 
             li{
-                background-color: white;
+                background-color: #D5DDE0;
                 text-align: center;
                 padding: 16px;
                 margin-top: 24px;
