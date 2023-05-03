@@ -424,6 +424,7 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  padding-bottom: 16px;
 }
 footer > div {
   grid-area: footer;
@@ -528,7 +529,7 @@ footer > div #socialmedia {
   background-color: #D5DDE0;
   text-align: center;
   padding: 16px;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 #whatsnew > div #c1 {
   grid-area: c1;

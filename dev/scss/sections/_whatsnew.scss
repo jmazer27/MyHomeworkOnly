@@ -21,6 +21,7 @@
                 "c1 c1 c2 c2"
                 "c3 c3 c4 c4"
                 ". c5 c5 .";
+                
             }
 
             @include lg{
@@ -36,7 +37,8 @@
                 background-color: #D5DDE0;
                 text-align: center;
                 padding: 16px;
-                margin-top: 24px;
+                margin-top: 16px;
+                
             }    
         }
 
