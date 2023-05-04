@@ -1,8 +1,8 @@
 #underhero{
         
     display: grid;
-    grid-template-areas: 16px auto 16px;
-    grid-area: ". underhero .";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". underhero .";
     
 
    

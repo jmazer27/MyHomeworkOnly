@@ -450,7 +450,7 @@ footer > div #newsletter {
   padding: 16px;
   grid-area: newsletter;
 }
-footer > div #newsletter button {
+footer > div #newsletter a {
   padding: 16px 24px;
   border: none;
 }
@@ -534,12 +534,15 @@ footer > div #socialmedia ul {
   grid-area: whatsnew;
   margin-bottom: 24px;
 }
-#whatsnew > div > h1 {
+#whatsnew > div img {
+  width: 50%;
+}
+#whatsnew > h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #637275;
 }
 @media (min-width: 768px) {
-  #whatsnew > div ul {
+  #whatsnew ul {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(4, 1fr);
@@ -547,39 +550,39 @@ footer > div #socialmedia ul {
   }
 }
 @media (min-width: 1024px) {
-  #whatsnew > div ul {
+  #whatsnew ul {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
   }
 }
-#whatsnew > div ul li {
+#whatsnew ul li {
   background-color: #D5DDE0;
   text-align: center;
   padding: 16px;
   margin-top: 16px;
 }
-#whatsnew > div #c1 {
+#whatsnew #c1 {
   grid-area: c1;
 }
-#whatsnew > div #c2 {
+#whatsnew #c2 {
   grid-area: c2;
 }
-#whatsnew > div #c3 {
+#whatsnew #c3 {
   grid-area: c3;
 }
-#whatsnew > div #c4 {
+#whatsnew #c4 {
   grid-area: c4;
 }
-#whatsnew > div #c5 {
+#whatsnew #c5 {
   grid-area: c5;
 }
 
 #underhero {
   display: grid;
-  grid-template-areas: 16px auto 16px;
-  grid-area: ". underhero .";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". underhero .";
 }
 #underhero > div {
   grid-area: underhero;
