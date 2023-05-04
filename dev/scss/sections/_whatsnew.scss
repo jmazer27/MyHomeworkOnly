@@ -9,6 +9,11 @@
     // background-color: gray;
     width: 100%;
 
+    @include xxl{
+        grid-template-columns: auto 1280px auto;
+        grid-template-areas: ". whatsnew .";
+      }
+
      >div{
         grid-area: whatsnew;
         margin-bottom: 24px;
@@ -46,7 +51,8 @@
                     "c1 c1 c2 c2 c3 c3"
                     ". c4 c4 c5 c5 ."
                 }
-                
+
+            
             li{
                 background-color: #D5DDE0;
                 text-align: center;
