@@ -25,19 +25,16 @@ footer {
             grid-area: newsletter;
 
             button{
-                margin-top: 16px;
+                padding: 16px 24px;
                 border: none;
             }
-
-
-            form{
                 input{
                     width: 357px;
                     background-color: #ADB5BD;
                     border: none;
                     padding: 16px 24px;
                 }
-            }
+            
         }
 
         #socialmedia {

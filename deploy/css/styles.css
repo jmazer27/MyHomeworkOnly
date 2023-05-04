@@ -451,10 +451,10 @@ footer > div #newsletter {
   grid-area: newsletter;
 }
 footer > div #newsletter button {
-  margin-top: 16px;
+  padding: 16px 24px;
   border: none;
 }
-footer > div #newsletter form input {
+footer > div #newsletter input {
   width: 357px;
   background-color: #ADB5BD;
   border: none;
