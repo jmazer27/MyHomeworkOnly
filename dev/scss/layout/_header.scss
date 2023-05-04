@@ -30,10 +30,18 @@
         grid-area: search;
 
         form {
-            input {}
+            
+            input {
+                border: none;
+            }
 
             button {
-                img {}
+                border: none;
+                height: 34px;
+                width: 43;
+                img {
+
+                }
             }
         }
     }

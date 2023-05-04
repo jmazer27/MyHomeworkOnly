@@ -3,9 +3,15 @@
     display: grid;
     grid-template-areas: 16px auto 16px;
     grid-area: ". underhero .";
+    
+
+   
     >div{
+        
         grid-area: underhero;
         // background-color: green;
+       
+
         ul{
             margin: 16px;
            
@@ -22,10 +28,23 @@
                 background-color: #3D5A80;
                 padding: 16px;
                 margin-bottom: 16px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
                 color: white;
 
-            }
+                img{
+                    border-radius: 50%;
+                    float: right;
+                    margin-left: 16px;
+                    border: 6px solid #F8F6E9
+                }
 
+                a{
+                    margin-bottom: 16px;
+                }
+            }
+      
         }
     }
 }
