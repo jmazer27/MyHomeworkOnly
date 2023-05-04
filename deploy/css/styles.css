@@ -605,6 +605,8 @@ footer > div #socialmedia ul {
   color: white;
 }
 #underhero > div ul li img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   float: right;
   margin-left: 16px;
