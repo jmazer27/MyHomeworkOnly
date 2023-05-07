@@ -3,12 +3,12 @@
 ============= */
 
 #header {
-    
+   
     #logo-nav {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". logo-nav .";
-       
+
 
         >div {
             grid-area: logo-nav;

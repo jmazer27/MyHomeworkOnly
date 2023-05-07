@@ -10,7 +10,7 @@
             background-color: fuchsia;
 
             #info-1{
-                background-color: #9A1211;
+                background-color: var(--reddark);
                 color: white;
                 padding: 16px;
                 display: grid;
@@ -19,7 +19,7 @@
             }
 
             #info-2{
-                background-color: #CD2B29;
+                background-color: var(--redmain);
                 padding: 16px;
 
             }

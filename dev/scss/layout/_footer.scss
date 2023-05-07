@@ -3,7 +3,7 @@
 ============= */
 
 footer {
-    background-color: #C9D2DA;
+    background-color: var(--greymid);
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -30,7 +30,7 @@ footer {
             }
                 input{
                     width: 357px;
-                    background-color: #ADB5BD;
+                    background-color: var(--greylight);
                     border: none;
                     padding: 16px 24px;
                 }
@@ -41,6 +41,7 @@ footer {
             grid-template-columns: 70% auto;
             padding: 16px;
             grid-area: socialmedia;
+         
            
            
             ul{

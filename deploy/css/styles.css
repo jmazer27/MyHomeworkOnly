@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --redmain: #CD2B29;
+  --reddark: #9A1211;
+  --navy: #3D5A80;
+  --greylight: #D5DDE0;
+  --greymid: #C9D2DA;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -359,13 +364,13 @@ ul li {
 }
 
 .buttoncolor {
-  background-color: #CD2B29;
+  background-color: var(--redmain);
   padding: 10px 24px;
   color: white;
 }
 
 .searchbuttoncolor {
-  background-color: #CD2B29;
+  background-color: var(--redmain);
 }
 
 .newheadline {
@@ -431,7 +436,7 @@ textarea {
     Footer
 ============= */
 footer {
-  background-color: #C9D2DA;
+  background-color: var(--greymid);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -456,7 +461,7 @@ footer > div #newsletter a {
 }
 footer > div #newsletter input {
   width: 357px;
-  background-color: #ADB5BD;
+  background-color: var(--greylight);
   border: none;
   padding: 16px 24px;
 }
@@ -493,14 +498,14 @@ footer > div #socialmedia ul {
   background-color: fuchsia;
 }
 #hero > div ul #info-1 {
-  background-color: #9A1211;
+  background-color: var(--reddark);
   color: white;
   padding: 16px;
   display: grid;
   grid-template-columns: 70% auto;
 }
 #hero > div ul #info-2 {
-  background-color: #CD2B29;
+  background-color: var(--redmain);
   padding: 16px;
 }
 @media (min-width: 768px) {
@@ -564,7 +569,7 @@ footer > div #socialmedia ul {
   }
 }
 #whatsnew ul li {
-  background-color: #D5DDE0;
+  background-color: var(--greylight);
   text-align: center;
   padding: 16px;
   margin-top: 16px;
@@ -611,7 +616,7 @@ footer > div #socialmedia ul {
   }
 }
 #underhero > div ul li {
-  background-color: #3D5A80;
+  background-color: var(--navy);
   padding: 16px;
   margin-bottom: 16px;
   display: flex;
