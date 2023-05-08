@@ -360,7 +360,7 @@ ul li {
 }
 
 .aboutimages {
-  width: 20%;
+  width: 100%;
 }
 
 .buttoncolor {
@@ -573,6 +573,9 @@ footer > div #socialmedia ul {
   text-align: center;
   padding: 16px;
   margin-top: 16px;
+}
+#whatsnew ul li img {
+  padding: none;
 }
 #whatsnew #c1 {
   grid-area: c1;
