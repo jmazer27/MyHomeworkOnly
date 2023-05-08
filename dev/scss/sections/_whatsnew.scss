@@ -7,7 +7,9 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". whatsnew .";
     // background-color: gray;
+    
     width: 100%;
+    
 
     @include xxl{
         grid-template-columns: auto 1280px auto;
@@ -17,6 +19,7 @@
      >div{
         grid-area: whatsnew;
         margin-bottom: 24px;
+        
 
         // img{
         //     width:50%;
@@ -32,7 +35,7 @@
         }
 
         ul{ 
-
+          
             
             @include md{
                 display: grid;
@@ -62,6 +65,7 @@
                 background-color: var(--greylight);
                 text-align: center;
                 padding-bottom: 24px ;
+                
                 
                 a{
                     width: 24px;

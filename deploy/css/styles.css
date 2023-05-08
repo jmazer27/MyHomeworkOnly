@@ -378,6 +378,15 @@ ul li {
   font-size: 27px;
 }
 
+.show-xl {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .show-xl {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -501,12 +510,11 @@ footer > div #socialmedia ul {
   background-color: var(--reddark);
   color: white;
   padding: 16px;
-  display: grid;
-  grid-template-columns: 70% auto;
 }
 #hero > div ul #info-2 {
   background-color: var(--redmain);
   padding: 16px;
+  color: white;
 }
 @media (min-width: 768px) {
   #hero > div ul {
