@@ -367,6 +367,7 @@ ul li {
   background-color: var(--redmain);
   padding: 10px 24px;
   color: white;
+  display: inline-block;
 }
 
 .searchbuttoncolor {
@@ -390,6 +391,11 @@ ul li {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -417,12 +423,15 @@ textarea {
 /* =============
     Header
 ============= */
-#header #logo-nav {
+header {
+  background-color: red;
+}
+header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
 }
-#header #logo-nav > div {
+header #logo-nav > div {
   grid-area: logo-nav;
 }
 #search {
@@ -574,18 +583,23 @@ footer > div #socialmedia ul {
   }
 }
 #whatsnew ul li {
-  align-content: center;
-  justify-content: center;
   background-color: var(--greylight);
   text-align: center;
-  padding-bottom: 24px;
-}
-#whatsnew ul li a {
-  width: 24px;
 }
 #whatsnew ul li img {
   width: 100%;
   padding: none;
+}
+#whatsnew ul li section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+#whatsnew ul li section div {
+  margin-top: auto;
+}
+#whatsnew ul li section div a {
+  display: inline-block;
 }
 #whatsnew #c1 {
   grid-area: c1;

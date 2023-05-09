@@ -59,30 +59,31 @@
 
             
             li{
-              
-                align-content: center;
-                justify-content: center;
+                
                 background-color: var(--greylight);
                 text-align: center;
-                padding-bottom: 24px ;
-                
-                
-                a{
-                    width: 24px;
-                    
-                   
-                    
-                }
-                // padding: 16px;
-                // margin-top: 16px;
 
                 img{
                     width: 100%;
                     padding: none;
                 }
 
+                section{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 16px;
 
-                
+                    div{
+                        margin-top: auto;
+                       
+                        a{
+                            display: inline-block;
+                            
+                        }
+                    }
+
+                    
+                }
             }    
         }
 
