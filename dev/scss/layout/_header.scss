@@ -3,11 +3,13 @@
 ============= */
 
 header {
-   background-color: red;
+//    background-color: var(--greymid);
     #logo-nav {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". logo-nav .";
+        background-color: var(--greymid);
+        padding: 16px 0 24px;
 
 
         >div {
@@ -25,6 +27,7 @@ header {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
+    padding: 16px 0;
 
     >div {
         grid-area: search;
