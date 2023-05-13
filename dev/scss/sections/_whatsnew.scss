@@ -2,108 +2,119 @@
     whats new
 ============= */
 
-#whatsnew{
+#whatsnew {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". whatsnew .";
-    // background-color: gray;
-    
     width: 100%;
-    
 
-    @include xxl{
+
+    @include xxl {
         grid-template-columns: auto 1280px auto;
         grid-template-areas: ". whatsnew .";
-      }
+    }
 
-     >div{
+    >div {
         grid-area: whatsnew;
         margin-bottom: 24px;
-        
 
-        // img{
-        //     width:50%;
-        // }
+    }
 
+
+    // whats new text
+    h1 {
+        font-weight: 400;
+        color: #637275;
+        margin-bottom: 16px;
+    }
+
+    ul {
+
+        h1{
+            font-weight: 600;
+            font-size: 27px;
+            color: black;
+            line-height: 30px;
+        }
+
+        p{
+            font-weight: 400;
+            line-height: 20px;
         }
 
 
-        // whats new text
-        >h1{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: #637275;
-        }
-
-        ul{ 
-          
-            
-            @include md{
-                display: grid;
-                gap: 16px;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-areas:
+        @include md {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
                 "c1 c1 c2 c2"
                 "c3 c3 c4 c4"
                 ". c5 c5 .";
-                
+
+        }
+
+        @include lg {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+                "c1 c1 c2 c2 c3 c3"
+                ". c4 c4 c5 c5 ."
+        }
+
+
+        li {
+
+            background-color: var(--greylight);
+            text-align: left;
+
+
+            img {
+                width: 100%;
+                padding: none;
             }
 
-            @include lg{
-                    display: grid;
-                    gap: 16px;
-                    grid-template-columns: repeat(6, 1fr);
-                    grid-template-areas:
-                    "c1 c1 c2 c2 c3 c3"
-                    ". c4 c4 c5 c5 ."
-                }
+            section {
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+                gap: 16px;
 
-            
-            li{
-                
-                background-color: var(--greylight);
-                text-align: center;
 
-                img{
-                    width: 100%;
-                    padding: none;
-                }
 
-                section{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 16px;
+                div {
+                    margin-top: auto;
 
-                    div{
-                        margin-top: auto;
-                       
-                        a{
-                            display: inline-block;
-                            
-                        }
+                    a {
+                        display: inline-block;
+
+
                     }
-
-                    
                 }
-            }    
-        }
 
-        #c1{
-            grid-area: c1;
-        }
-    
-        #c2{
-            grid-area: c2;
-        }
-    
-        #c3{
-            grid-area: c3;
-        }
-    
-        #c4{
-            grid-area: c4;
-        }
-    
-        #c5{
-            grid-area: c5;
+
+            }
         }
     }
+
+    #c1 {
+        grid-area: c1;
+    }
+
+    #c2 {
+        grid-area: c2;
+    }
+
+    #c3 {
+        grid-area: c3;
+    }
+
+    #c4 {
+        grid-area: c4;
+    }
+
+    #c5 {
+        grid-area: c5;
+    }
+}

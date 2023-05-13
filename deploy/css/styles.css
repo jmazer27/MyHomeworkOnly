@@ -396,6 +396,10 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
@@ -460,6 +464,21 @@ footer {
   grid-template-areas: ". footer .";
   padding-bottom: 16px;
 }
+footer h1 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 16px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 16px auto 16px;
+}
 footer > div {
   grid-area: footer;
 }
@@ -476,6 +495,7 @@ footer > div #newsletter {
 footer > div #newsletter a {
   padding: 16px 24px;
   border: none;
+  margin-top: 16px;
 }
 footer > div #newsletter input {
   width: 357px;
@@ -520,10 +540,25 @@ footer > div #socialmedia ul {
   color: white;
   padding: 16px;
 }
+#hero > div ul #info-1 h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+#hero > div ul #info-1 p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
 #hero > div ul #info-2 {
   background-color: var(--redmain);
   padding: 16px;
   color: white;
+}
+#hero > div ul #info-2 p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   #hero > div ul {
@@ -562,9 +597,20 @@ footer > div #socialmedia ul {
   grid-area: whatsnew;
   margin-bottom: 24px;
 }
-#whatsnew > h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+#whatsnew h1 {
+  font-weight: 400;
   color: #637275;
+  margin-bottom: 16px;
+}
+#whatsnew ul h1 {
+  font-weight: 600;
+  font-size: 27px;
+  color: black;
+  line-height: 30px;
+}
+#whatsnew ul p {
+  font-weight: 400;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   #whatsnew ul {
@@ -584,7 +630,7 @@ footer > div #socialmedia ul {
 }
 #whatsnew ul li {
   background-color: var(--greylight);
-  text-align: center;
+  text-align: left;
 }
 #whatsnew ul li img {
   width: 100%;
@@ -594,6 +640,7 @@ footer > div #socialmedia ul {
   display: flex;
   flex-direction: column;
   padding: 16px;
+  gap: 16px;
 }
 #whatsnew ul li section div {
   margin-top: auto;
@@ -621,6 +668,11 @@ footer > div #socialmedia ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". underhero .";
+}
+#underhero h1 {
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 30px;
 }
 @media (min-width: 1440px) {
   #underhero {
@@ -661,6 +713,7 @@ footer > div #socialmedia ul {
 }
 #underhero > div ul li a {
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 /* =============
