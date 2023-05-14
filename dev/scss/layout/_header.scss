@@ -3,7 +3,8 @@
 ============= */
 
 header {
-//    background-color: var(--greymid);
+
+    //    background-color: var(--greymid);
     #logo-nav {
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -15,9 +16,7 @@ header {
         >div {
             grid-area: logo-nav;
 
-            img {
-               
-            }
+            img {}
         }
 
     }
@@ -29,21 +28,36 @@ header {
     grid-template-areas: ". search .";
     padding: 16px 0;
 
+    @include md{
+        padding: 24px 0;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     >div {
         grid-area: search;
 
         form {
-            
+                display: flex;
             input {
                 border: none;
+                border-bottom: 1px solid var(--navy);
+                width: 100%;
+                border-radius: 0;
+                margin-right: 8px;
+                font-weight: 300;
+                font-size: 30px; 
             }
 
             button {
                 border: none;
-                height: 34px;
-                width: 43;
+                background-color: var(--redmain);
+                border-radius: 5px;
+                padding: 10px 16px;
                 img {
-
+                    
                 }
             }
         }

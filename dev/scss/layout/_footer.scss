@@ -25,14 +25,7 @@ footer {
         font-size: 12px;
         margin: 16px auto 16px;
         
-    }
-
-    // a{
-    //     font-weight: 400;
-    //     font-size: 12px;
-       
-    // }
-    
+    }    
 
     >div {
         grid-area: footer;
@@ -41,6 +34,9 @@ footer {
             grid-template-columns: 70% auto;
             padding: 16px;
             grid-area: office;
+            h1{
+                color: var(--navy);
+            }
         }
 
         #newsletter {
@@ -66,9 +62,7 @@ footer {
             grid-template-columns: 70% auto;
             padding: 16px;
             grid-area: socialmedia;
-         
-           
-           
+                       
             ul{
                 display: flex;
                 gap: 24px;
@@ -89,6 +83,11 @@ footer {
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: 
             "office newsletter socialmedia"
+        }
+
+        @include xxl {
+            grid-template-columns: auto 1280px auto;
+            
         }
 
     }

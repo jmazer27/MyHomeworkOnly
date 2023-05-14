@@ -3,29 +3,24 @@
 ============= */
 
 #hero {
+  
+    h1 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+    }
     >div {
+       
         ul {
-            margin: 0;
-            padding: 0;
-            background-color: fuchsia;
-
             #info-1 {
                 background-color: var(--reddark);
                 color: white;
                 padding: 16px;
-
-                h1 {
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 20px;
-                }
-
-                p {
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 20px;
-                }
-
 
             }
 
@@ -33,11 +28,7 @@
                 background-color: var(--redmain);
                 padding: 16px;
                 color: white;
-                p {
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 20px;
-                }
+            
 
             }
 

@@ -370,10 +370,6 @@ ul li {
   display: inline-block;
 }
 
-.searchbuttoncolor {
-  background-color: var(--redmain);
-}
-
 .newheadline {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 27px;
@@ -443,16 +439,36 @@ header #logo-nav > div {
   grid-template-areas: ". search .";
   padding: 16px 0;
 }
+@media (min-width: 768px) {
+  #search {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #search {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 #search > div {
   grid-area: search;
 }
+#search > div form {
+  display: flex;
+}
 #search > div form input {
   border: none;
+  border-bottom: 1px solid var(--navy);
+  width: 100%;
+  border-radius: 0;
+  margin-right: 8px;
+  font-weight: 300;
+  font-size: 30px;
 }
 #search > div form button {
   border: none;
-  height: 34px;
-  width: 43;
+  background-color: var(--redmain);
+  border-radius: 5px;
+  padding: 10px 16px;
 }
 /* =============
     Footer
@@ -486,6 +502,9 @@ footer > div #office {
   grid-template-columns: 70% auto;
   padding: 16px;
   grid-area: office;
+}
+footer > div #office h1 {
+  color: var(--navy);
 }
 footer > div #newsletter {
   grid-template-columns: 70% auto;
@@ -526,39 +545,34 @@ footer > div #socialmedia ul {
     grid-template-areas: "office newsletter socialmedia";
   }
 }
+@media (min-width: 1440px) {
+  footer > div {
+    grid-template-columns: auto 1280px auto;
+  }
+}
 
 /* =============
     Hero
 ============= */
-#hero > div ul {
-  margin: 0;
-  padding: 0;
-  background-color: fuchsia;
+#hero h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+#hero p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 #hero > div ul #info-1 {
   background-color: var(--reddark);
   color: white;
   padding: 16px;
 }
-#hero > div ul #info-1 h1 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-}
-#hero > div ul #info-1 p {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-}
 #hero > div ul #info-2 {
   background-color: var(--redmain);
   padding: 16px;
   color: white;
-}
-#hero > div ul #info-2 p {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
 }
 @media (min-width: 768px) {
   #hero > div ul {
@@ -631,6 +645,7 @@ footer > div #socialmedia ul {
 #whatsnew ul li {
   background-color: var(--greylight);
   text-align: left;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
 #whatsnew ul li img {
   width: 100%;
