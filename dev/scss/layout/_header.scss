@@ -28,6 +28,19 @@ header {
     grid-template-areas: ". search .";
     padding: 16px 0;
 
+    // button:link, 
+    // button:visited{
+        
+    //     color: white;
+    //     transition: 0.25s;
+        
+    // }
+
+    // button:hover, button:active{
+    //     color: var(--navy);
+        
+    // }
+
     @include md{
         padding: 24px 0;
     }

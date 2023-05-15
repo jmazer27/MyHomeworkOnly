@@ -511,6 +511,15 @@ footer > div #newsletter {
   padding: 16px;
   grid-area: newsletter;
 }
+footer > div #newsletter a:link,
+footer > div #newsletter a:visited {
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
+}
+footer > div #newsletter a:hover, footer > div #newsletter a:active {
+  text-decoration: underline;
+}
 footer > div #newsletter a {
   padding: 16px 24px;
   border: none;
@@ -591,6 +600,15 @@ footer > div #socialmedia ul {
     grid-template-areas: auto 1440px auto;
   }
 }
+#hero > div ul li a:link,
+#hero > div ul li a:visited {
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
+}
+#hero > div ul li a:hover, #hero > div ul li a:active {
+  color: navy;
+}
 
 /* =============
     whats new
@@ -646,6 +664,15 @@ footer > div #socialmedia ul {
   background-color: var(--greylight);
   text-align: left;
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+}
+#whatsnew ul li a:link,
+#whatsnew ul li a:visited {
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
+}
+#whatsnew ul li a:hover, #whatsnew ul li a:active {
+  text-decoration: underline;
 }
 #whatsnew ul li img {
   width: 100%;
@@ -717,6 +744,15 @@ footer > div #socialmedia ul {
   align-items: flex-end;
   justify-content: space-between;
   color: white;
+}
+#underhero > div ul li a:link,
+#underhero > div ul li a:visited {
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
+}
+#underhero > div ul li a:hover, #underhero > div ul li a:active {
+  text-decoration: underline;
 }
 #underhero > div ul li img {
   width: 100px;

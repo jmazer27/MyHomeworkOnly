@@ -69,7 +69,19 @@
             background-color: var(--greylight);
             text-align: left;
             box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+           
+            a:link, 
+            a:visited{
+                text-decoration: none;
+                color: white;
+                transition: 0.25s;
+                
+            }
 
+            a:hover, a:active{
+                text-decoration: underline;
+                
+            }
 
             img {
                 width: 100%;

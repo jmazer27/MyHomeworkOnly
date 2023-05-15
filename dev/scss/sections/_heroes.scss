@@ -45,6 +45,21 @@
             @include xxl {
                 grid-template-areas: auto 1440px auto;
             }
+
+            li{
+                a:link, 
+                a:visited{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.25s;
+                    
+                }
+
+                a:hover, a:active{
+                    color: navy;
+                    
+                }
+            }
         }
     }
 }
