@@ -439,6 +439,14 @@ header #logo-nav > div {
   grid-template-areas: ". search .";
   padding: 16px 0;
 }
+#search button {
+  color: white;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#search button:hover {
+  background-color: var(--navy);
+}
 @media (min-width: 768px) {
   #search {
     padding: 24px 0;
@@ -539,6 +547,9 @@ footer > div #socialmedia {
 footer > div #socialmedia ul {
   display: flex;
   gap: 24px;
+}
+footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visited {
+  color: black;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -671,12 +682,14 @@ footer > div #socialmedia ul {
   color: white;
   transition: 0.25s;
 }
-#whatsnew ul li a:hover, #whatsnew ul li a:active {
+#whatsnew ul li a:hover,
+#whatsnew ul li a:active {
   text-decoration: underline;
 }
-#whatsnew ul li img {
-  width: 100%;
-  padding: none;
+#whatsnew ul li .card-img {
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
 }
 #whatsnew ul li section {
   display: flex;
@@ -693,8 +706,14 @@ footer > div #socialmedia ul {
 #whatsnew #c1 {
   grid-area: c1;
 }
+#whatsnew #c1 .card-img {
+  background-image: url("../img/whatsnew/shaunwhitegold.jpg");
+}
 #whatsnew #c2 {
   grid-area: c2;
+}
+#whatsnew #c2 .card-img {
+  background-image: url("..img/whatsnew/mobiletrick.jpg");
 }
 #whatsnew #c3 {
   grid-area: c3;

@@ -79,6 +79,11 @@ footer {
             ul{
                 display: flex;
                 gap: 24px;
+                li{
+                    a:link, a:visited{
+                        color: black;
+                    }
+                }
 
             }
         }
