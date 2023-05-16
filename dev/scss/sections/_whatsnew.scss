@@ -84,11 +84,6 @@
 
             }
 
-            // img {
-            //     width: 100%;
-            //     padding: none;
-            // }
-
             .card-img {
                 background-size: cover;
                 background-position: center;
@@ -117,7 +112,6 @@
 
     #c1 {
         grid-area: c1;
-
         .card-img {
             background-image: url("../img/whatsnew/wn1.jpg");
         }
@@ -125,30 +119,32 @@
 
     #c2 {
         grid-area: c2;
-
-        // .card-img {
-        //     background-image: url("..img/whatsnew/mobiletrick.jpg");
-        // }
+        .card-img {
+            background-image: url("../img/whatsnew/wn2.jpg");
+        }
 
     }
 
     #c3 {
         grid-area: c3;
-
-        .card-img{
-            background-image: url("..img/whatsnew/wn3.jpg");
-}
+        // .card-img {
+        //     background-image: url("../img/whatsnew/wn3.jpg");
+        // }
+   
     }
 
     #c4 {
         grid-area: c4;
-
+        .card-img {
+            background-image: url("../img/whatsnew/wn4.jpg");
+        }
 
     }
 
     #c5 {
         grid-area: c5;
-
-
+        .card-img {
+            background-image: url("../img/whatsnew/wn5.jpg");
+        }
     }
 }
