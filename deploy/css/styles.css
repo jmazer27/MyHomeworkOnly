@@ -712,11 +712,11 @@ footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visite
 #whatsnew #c2 {
   grid-area: c2;
 }
-#whatsnew #c2 .card-img {
-  background-image: url("..img/whatsnew/mobiletrick.jpg");
-}
 #whatsnew #c3 {
   grid-area: c3;
+}
+#whatsnew #c3 .card-img {
+  background-image: url("..img/whatsnew/womangold.jpg");
 }
 #whatsnew #c4 {
   grid-area: c4;

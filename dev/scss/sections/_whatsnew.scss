@@ -94,6 +94,7 @@
                 background-position: center;
                 height: 30vh;
             }
+            
 
             section {
                 display: flex;
@@ -125,16 +126,18 @@
     #c2 {
         grid-area: c2;
 
-        .card-img {
-            background-image: url("..img/whatsnew/mobiletrick.jpg");
-        }
+        // .card-img {
+        //     background-image: url("..img/whatsnew/mobiletrick.jpg");
+        // }
 
     }
 
     #c3 {
         grid-area: c3;
 
-
+        .card-img{
+            background-image: url("..img/whatsnew/womangold.jpg");
+}
     }
 
     #c4 {
