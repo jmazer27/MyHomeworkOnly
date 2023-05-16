@@ -478,6 +478,7 @@ header #logo-nav > div {
   border-radius: 5px;
   padding: 10px 16px;
 }
+
 /* =============
     Footer
 ============= */
@@ -707,7 +708,7 @@ footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visite
   grid-area: c1;
 }
 #whatsnew #c1 .card-img {
-  background-image: url("../img/whatsnew/shaunwhitegold.jpg");
+  background-image: url("../img/whatsnew/wn1.jpg");
 }
 #whatsnew #c2 {
   grid-area: c2;
@@ -716,7 +717,7 @@ footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visite
   grid-area: c3;
 }
 #whatsnew #c3 .card-img {
-  background-image: url("..img/whatsnew/womangold.jpg");
+  background-image: url("..img/whatsnew/wn3.jpg");
 }
 #whatsnew #c4 {
   grid-area: c4;
