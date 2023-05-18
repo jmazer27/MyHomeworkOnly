@@ -713,17 +713,23 @@ footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visite
 #whatsnew #c2 {
   grid-area: c2;
 }
+#whatsnew #c2 .card-img {
+  background-image: url("../img/whatsnew/wn2.jpg");
+}
 #whatsnew #c3 {
   grid-area: c3;
-}
-#whatsnew #c3 .card-img {
-  background-image: url("..img/whatsnew/wn3.jpg");
 }
 #whatsnew #c4 {
   grid-area: c4;
 }
+#whatsnew #c4 .card-img {
+  background-image: url("../img/whatsnew/wn4.jpg");
+}
 #whatsnew #c5 {
   grid-area: c5;
+}
+#whatsnew #c5 .card-img {
+  background-image: url("../img/whatsnew/wn5.jpg");
 }
 
 #underhero {

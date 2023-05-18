@@ -11,7 +11,8 @@ header {
         grid-template-areas: ". logo-nav .";
         background-color: var(--greymid);
         padding: 16px 0 24px;
-
+       
+       
 
         >div {
             grid-area: logo-nav;
@@ -19,8 +20,13 @@ header {
             img {}
         }
 
+       
+        }
+
+       
+
     }
-}
+
 
 #search {
     display: grid;
