@@ -551,6 +551,7 @@ footer > div #socialmedia ul {
 }
 footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visited {
   color: black;
+  font-size: x-large;
 }
 @media (min-width: 768px) {
   footer > div {
