@@ -719,6 +719,9 @@ footer > div #socialmedia ul li a:link, footer > div #socialmedia ul li a:visite
 #whatsnew #c3 {
   grid-area: c3;
 }
+#whatsnew #c3 .card-img {
+  background-image: url("../img/whatsnew/wn3.jpg");
+}
 #whatsnew #c4 {
   grid-area: c4;
 }
